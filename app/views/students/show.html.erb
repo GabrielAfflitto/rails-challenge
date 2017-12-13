@@ -1,3 +1,5 @@
 <h1> <%= @student.name %></h1>
+<%= render partial: 'students/address', collection: @student.addresses.reverse %>
+<%= render partial: 'addresses/form' %>
 <h3><%= link_to "<< See all students", students_path %></h3>
 <h3><%= link_to "Create a new student", new_student_path %></h3>

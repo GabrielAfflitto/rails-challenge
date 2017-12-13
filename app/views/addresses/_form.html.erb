@@ -1,0 +1,15 @@
+<h1>Create an address</h1>
+
+<%= form_for [@student, @address] do |f| %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :street_address %>
+  <%= f.text_field :street_address %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <%= f.label :state %>
+  <%= f.text_field :state %>
+  <%= f.label :zipcode %>
+  <%= f.number_field :zipcode %>
+  <%= f.submit :submit %>
+<% end %>
