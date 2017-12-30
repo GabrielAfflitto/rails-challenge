@@ -8,6 +8,7 @@ class AddressesController < ApplicationController
     redirect_to student_path(@address.student)
   end
 
+
   private
 
   def address_params
